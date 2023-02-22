@@ -11,7 +11,7 @@ public class PostgreSqlSelectJdbcWrapperFactory {
     private final static Logger staticLogger = Logger.getLogger("PostgreSqlSelectJdbcWrapperStatic");
 
     /**
-     * Метод, возвращающий экземпляр класса <code>PostgreSqlSelectJdbcWrapper</code>,
+     * Метод, возвращающий экземпляр класса {@code PostgreSqlSelectJdbcWrapper},
      * использующий пул соединений c3p0 к PostgreSQL
      *
      * @param serverName - имя сервера
@@ -19,7 +19,7 @@ public class PostgreSqlSelectJdbcWrapperFactory {
      * @param database   - имя базы данных
      * @param user       - имя пользователя
      * @param password   - пароль
-     * @return - экземпляр класса <code>PostgreSqlSelectJdbcWrapper</code> с пулом соединений, возвращает null в случае
+     * @return - экземпляр класса {@code PostgreSqlSelectJdbcWrapper} с пулом соединений, возвращает null в случае
      * ошибки
      */
     public static PostgreSqlSelectJdbcWrapper getInstanceWithC3P0Pool(String serverName,
@@ -45,14 +45,14 @@ public class PostgreSqlSelectJdbcWrapperFactory {
     }
 
     /**
-     * Метод, возвращающий экземпляр класса <code>PostgreSqlSelectJdbcWrapper</code> с PGSimpleDataSource
+     * Метод, возвращающий экземпляр класса {@code PostgreSqlSelectJdbcWrapper} с {@code PGSimpleDataSource}
      *
      * @param serverName - имя сервера
      * @param port       - номер порта
      * @param database   - имя базы данных
      * @param user       - имя пользователя
      * @param password   - пароль
-     * @return - экземпляр класса <code>PostgreSqlSelectJdbcWrapper</code> с PGSimpleDataSource
+     * @return - экземпляр класса {@code PostgreSqlSelectJdbcWrapper} с {@code PGSimpleDataSource}
      */
     public static PostgreSqlSelectJdbcWrapper getInstanceWithSimpleDatasource(String serverName,
                                                                               int port,

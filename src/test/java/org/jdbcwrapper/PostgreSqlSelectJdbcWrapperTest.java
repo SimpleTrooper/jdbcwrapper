@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
- * Тестовый класс для PostgreSqlSelectJdbcWrapper
+ * Тестовый класс для {@code PostgreSqlSelectJdbcWrapper}
  */
 class PostgreSqlSelectJdbcWrapperTest {
 
@@ -25,7 +25,7 @@ class PostgreSqlSelectJdbcWrapperTest {
 
 
     /**
-     * Тест для проверки количества записей, возвращаемых в ResultSet. Необходимо предварительно настроить БД и
+     * Тест для проверки количества записей, возвращаемых в {@code ResultSet}. Необходимо предварительно настроить БД и
      * установить в тесте необходимые параметры подключения, запрос и количество ожидаемых записей.
      */
     @Test

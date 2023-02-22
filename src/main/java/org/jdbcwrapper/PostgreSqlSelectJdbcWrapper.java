@@ -47,7 +47,7 @@ public class PostgreSqlSelectJdbcWrapper implements JdbcSelectWrapper {
     }
 
     /**
-     * Закрывает текущее соединение и открытые ресурсы (ResultSet, PreparedStatement)
+     * Закрывает текущее соединение и открытые ресурсы ({@code ResultSet}, {@code PreparedStatement})
      */
     @Override
     public void closeConnection() {
@@ -56,7 +56,7 @@ public class PostgreSqlSelectJdbcWrapper implements JdbcSelectWrapper {
     }
 
     /**
-     * Закрывает все открытые экземпляры <code>ResultSet</code> и <code>PreparedStatement</code>
+     * Закрывает все открытые экземпляры {@code ResultSet} и {@code PreparedStatement}
      */
     private void closeResources() {
         closeResources(openedResultSets);
@@ -86,7 +86,7 @@ public class PostgreSqlSelectJdbcWrapper implements JdbcSelectWrapper {
      * Выполняет SQL SELECT запрос к PostgreSQL
      *
      * @param selectQuery - запрос, должен начинаться с SELECT
-     * @return экземпляр <code>Optional<ResultSet></code>, в случае ошибки возвращает <code>Optional.empty()</code>
+     * @return экземпляр {@code Optional<ResultSet>}, в случае ошибки возвращает {@code Optional.empty()}
      */
     @Override
     public Optional<ResultSet> executeSelectQuery(String selectQuery) {

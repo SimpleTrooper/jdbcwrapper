@@ -16,7 +16,7 @@ public interface JdbcSelectWrapper {
      * Запрос SELECT к СУБД
      *
      * @param selectQuery - запрос, должен начинаться с SELECT
-     * @return объект <code>ResultSet</code>
+     * @return объект {@code ResultSet}
      */
     Optional<ResultSet> executeSelectQuery(String selectQuery);
 
